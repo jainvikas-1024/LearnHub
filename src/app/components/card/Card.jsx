@@ -10,8 +10,8 @@ const Card = ({ post }) => {
           <Image
             src="/th.jpg"
             alt="post image"
-            height={350}
-            width={420}
+            height={300}
+            width={320}
             className={styles.image}
           />
         </div>

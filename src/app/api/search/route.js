@@ -7,31 +7,31 @@ export async function GET(request) {
   const uri = process.env.MONGO;
   const client = new MongoClient(uri);
   try {
-    const database = client.db("stock-management");
+    const database = client.db("learnHub");
     const post = database.collection("post");
-    const posts = await post
+    const products = await post
       .aggregate([
         {
           $match: {
-            $or: [{ name: { $regex: query, $options: "i" } }],
+            $or: [{ skillname: { $regex: query, $options: "i" } }],
           },
         },
         // {
         //   $search: {
         //     text: {
         //       query: query,
-        //       path: ["slug", "quantity", "price"],
+        //       path: ["skillname", "levelskill", "duration"],
         //     },
         //   },
         // },
-        {
-          $sort: {
-            price: 1,
-          },
-        },
+        // {
+        //   $sort: {
+        //     price: 1,
+        //   },
+        // },
       ])
       .toArray();
-    return NextResponse.json({ success: true, posts });
+    return NextResponse.json({ success: true, products });
   } finally {
     await client.close();
   }

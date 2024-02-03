@@ -1,0 +1,97 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: white;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: rgb(64, 174, 210);
+  border-radius: 40px 40px 40px 40px;
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;
+  border-radius: 20px 20px 20px 20px;
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #20c225;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 0 30% 0 30%;  
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  cursor: pointer;  
+  width: 40%;
+}  
+.registerbtn:hover {  
+    background-color: #0b9b10;  
+}  
+</style>  
+</head>  
+<body>
+    <div class="mybody">
+        <form>  
+            <div class="container">  
+                <centre>  <h1> Add Your Journey</h1> </centre>
+                <hr>
+                <label> Skill Name </label>   
+                <input type="text" name="skill_name" placeholder="Add Your Skill" size="15" required />   
+                <label> Skill Level </label>   
+                <input type="text" name="skill_level" placeholder="Add level(eg. Beginner, Intermediate, Advanced)" size="15" required />   
+                <label> Journey Duration: </label>    
+                <input type="text" name="duration" placeholder="Add Duration" size="15"required />
+                <div>
+                    <label> Learning Preferences:</label>
+                    <br>
+                    <br>
+                    <input type="radio" value="visual" name="preference" checked > Visual Learner 
+                    <input type="radio" value="audio" name="preference"> Auditory Learner
+                    <input type="radio" value="kinesthetic" name="preference"> kinesthetic Learner
+                    <input type="radio" value="multimodal" name="preference"> Multimodal learning approaches
+                    <!-- <input type="text" value="other" name="preference" placeholder="mention"> Other -->
+                </div>  
+                <h4>Roadmap:</h4>
+                <textarea placeholder="Learning Phases" cols="80" rows="5" value="roadmap" required> </textarea>
+                <br>
+                Resources Used:
+                <textarea cols="80" rows="5" placeholder="Add Resources" value="resources" required> </textarea>  
+                <br>
+                Initial Mistakes:
+                <textarea cols="80" rows="5" placeholder="Add Mistakes" value="mistakes" required> </textarea>
+                <br>
+                Recommended Practice:
+                <textarea cols="80" rows="5" placeholder="Add Daily routine,Practice schedules, Habit-building strategies" value="practice" required> </textarea>
+                <br>
+                Add Your Support System:
+                <textarea cols="80" rows="5" placeholder="Add Online communities, study groups, etc. that helped you" value="support" required> </textarea>
+                <br>
+                Learning Assessments:
+                <textarea cols="80" rows="5" placeholder="Add Self-assessment techniques, Use of quizzes or tests" value="assesment" required> </textarea>
+
+                <button type="submit" class="registerbtn">Post</button>    
+            </div>
+        </form>
+    </div>
+  
+</body>  
+</html>  

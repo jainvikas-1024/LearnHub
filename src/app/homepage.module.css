@@ -1,4 +1,13 @@
 .content{
     display: flex;
     gap: 50px;
+    background-color: #211152;
+}
+.headerimg{
+    height: 10px;
+}
+.preformated{
+    margin-left: -90%;
+    margin-top: -50%;
+    font-size: 20px;
 }

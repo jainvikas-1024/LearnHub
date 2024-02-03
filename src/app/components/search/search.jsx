@@ -32,7 +32,7 @@ const Search = () => {
 
   return (
     <div className={styles.searchContainer}>
-      <h1>Search Posts</h1>
+      {/* <h5>Search Posts</h5> */}
       <div className={styles.searchBar}>
         <input
           type="text"

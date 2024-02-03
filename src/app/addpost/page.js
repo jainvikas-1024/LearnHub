@@ -25,7 +25,21 @@ const page = () => {
         setTimeout(() => {
           setAlert("");
         }, 5000);
-        setPostForm({});
+        setPostForm({
+          skillname: "",
+          levelskill: "",
+          duration: "",
+          visual: "",
+          audio: "",
+          kines: "",
+          multim: "",
+          roadmap: "",
+          resources: "",
+          mistakes: "",
+          practice: "",
+          support: "",
+          assessment: "",
+        });
       } else {
         console.log("Failed to add post:", response.statusText);
       }
@@ -77,7 +91,10 @@ const page = () => {
               <input
                 className={styles.input}
                 type="text"
-                name="skill_name"
+                id="skillname"
+                name="skillname"
+                value={postForm?.skillname || ""}
+                onChange={handleChange}
                 placeholder="Add Your Skill"
                 size="15"
                 required
@@ -86,7 +103,10 @@ const page = () => {
               <input
                 type="text"
                 className={styles.input}
-                name="skill_level"
+                id="levelskill"
+                name="levelskill"
+                value={postForm?.levelskill || ""}
+                onChange={handleChange}
                 placeholder="Add level(eg. Beginner, Intermediate, Advanced)"
                 size="15"
                 required
@@ -96,48 +116,74 @@ const page = () => {
                 type="text"
                 name="duration"
                 className={styles.input}
+                id="duration"
+                value={postForm?.duration || ""}
+                onChange={handleChange}
                 placeholder="Add Duration"
                 size="15"
                 required
               />
               <div>
-                <label> Learning Preferences:</label>
+                {/* <label> Learning Preferences:</label>
                 <br />
                 <br />
                 <input
                   type="radio"
-                  className={styles.input}
-                  value="visual"
+                  id="visual"
                   name="preference"
+                  value={postForm?.preference || ""}
+                  onChange={handleChange}
+                  className={styles.input}
+      
                   checked
-                />{" "}
-                Visual Learner
-                <input type="radio" value="audio" name="preference" /> Auditory
-                Learner
+                />{" "} Visual Learner
+                <input 
+                type="radio" 
+                
+                id="audio"
+                name="preference" 
+                value={postForm?.preference || ""}
+                onChange={handleChange}
+                
+                /> Auditory Learner
                 <input
                   type="radio"
-                  value="kinesthetic"
-                  className={styles.input}
+                  
+                  id="kines"
                   name="preference"
+                  value={postForm?.preference || ""}
+                  onChange={handleChange}
+                  className={styles.input}
+                  
                 />{" "}
                 kinesthetic Learner
                 <input
                   type="radio"
-                  value="multimodal"
+                  
                   name="preference"
+                  id="multim"
+                  value={postForm?.preference || ""}
+                  onChange={handleChange}
                   className={styles.input}
                 />{" "}
-                Multimodal learning approaches
+                Multimodal learning approaches */}
                 {/* <!-- <input type="text" value="other" name="preference" placeholder="mention"/> Other --> */}
               </div>
               <h4>Roadmap:</h4>
               <textarea
+                id="roadmap"
+                name="roadmap"
+                value={postForm?.roadmap || ""}
+                onChange={handleChange}
+                
                 placeholder="Learning Phases"
                 cols="80"
                 rows="5"
-                value="roadmap"
+              
+
                 className={styles.textarea}
                 required
+
               />
               <br />
               Resources Used:
@@ -146,7 +192,11 @@ const page = () => {
                 rows="5"
                 className={styles.textarea}
                 placeholder="Add Resources"
-                value="resources"
+
+                id="resources"
+                name="resources"
+                value={postForm?.resources || ""}
+                onChange={handleChange}
                 required
               />
               <br />
@@ -156,7 +206,11 @@ const page = () => {
                 rows="5"
                 className={styles.textarea}
                 placeholder="Add Mistakes"
-                value="mistakes"
+                
+                id="mistakes"
+                name="mistakes"
+                value={postForm?.mistakes || ""}
+                onChange={handleChange}
                 required
               >
                 {" "}
@@ -168,7 +222,11 @@ const page = () => {
                 rows="5"
                 className={styles.textarea}
                 placeholder="Add Daily routine,Practice schedules, Habit-building strategies"
-                value="practice"
+
+                id="practice"
+                name="practice"
+                value={postForm?.practice || ""}
+                onChange={handleChange}
                 required
               >
                 {" "}
@@ -180,7 +238,11 @@ const page = () => {
                 rows="5"
                 className={styles.textarea}
                 placeholder="Add Online communities, study groups, etc. that helped you"
-                value="support"
+                // value="support"
+                id="support"
+                name="support"
+                value={postForm?.support || ""}
+                onChange={handleChange}
                 required
               >
                 {" "}
@@ -192,12 +254,16 @@ const page = () => {
                 rows="5"
                 className={styles.textarea}
                 placeholder="Add Self-assessment techniques, Use of quizzes or tests"
-                value="assesment"
+                // value="assessment"
+                id="assessment"
+                name="assessment"
+                value={postForm?.assessment || ""}
+                onChange={handleChange}
                 required
               >
                 {" "}
               </textarea>
-              <button type="submit" className="registerbtn">
+              <button type="submit" onClick={addPost} className={styles.registerbtn}>
                 Post
               </button>
             </div>

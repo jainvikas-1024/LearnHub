@@ -35,6 +35,22 @@ a{
   background-color: var(--bg);
 }
 
+.dark{
+  --bg:#202124;
+  --textColor:#ddd;
+  --softBg:#303134;
+  --softTextColor:#a6a6a6;
+}
+
+.light{
+  --bg: white;
+  --textColor: black;
+  --softBg: #f0f0f0;
+  --softTextColor: #626262;
+}
+
+
+
 .wrapper{
   max-width: 90%;
   margin: 0 auto;

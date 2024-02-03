@@ -5,7 +5,7 @@ import Image from "next/image";
 import Card from "../card/Card";
 const CardList = () => {
   const [posts, setPosts] = useState([]);
-
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     const fetchPosts = async () => {
       try {
@@ -18,18 +18,25 @@ const CardList = () => {
         }
         let rjson = await response.json();
         console.log(rjson);
+        setLoading(false);
         setPosts(rjson.products);
       } catch (error) {
         console.error("Error fetching data:", error.message);
       }
     };
     fetchPosts();
+    setLoading(true);
   }, []);
   console.log(posts);
 
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Recent Posts</h1>
+      {loading && (
+        <div className={styles.imgContainer}>
+          <Image src="/loading.gif" alt="" height={100} width={100} />
+        </div>
+      )}
       <div className={styles.posts}>
         {posts ? (
           posts.map((post) => (
@@ -37,7 +44,7 @@ const CardList = () => {
             <Card key={post._id} post={post} />
           ))
         ) : (
-          <Card />
+          <span>Sorry, No Posts found</span>
         )}
       </div>
     </div>

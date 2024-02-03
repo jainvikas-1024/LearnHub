@@ -20,6 +20,8 @@ const Navbar = async () => {
         <Link href="/contact" className={styles.link}>
           Contact Us
         </Link>
+        <button className={styles.btn}>Sign in</button>
+        <button className={styles.btn}>Sign up</button>
       </div>
       <ResponsiveNav />
     </div>

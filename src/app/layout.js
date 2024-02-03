@@ -2,6 +2,7 @@ import { Asul } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+// import ThemeProvider from "./components/theme-provider";
 const asul = Asul({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -16,6 +17,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={asul.className}>
+        {/* <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        > */}
         <div className="container">
           <header>
             <Navbar />
@@ -25,6 +32,7 @@ export default function RootLayout({ children }) {
             <Footer />
           </div>
         </div>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );

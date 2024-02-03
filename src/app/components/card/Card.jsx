@@ -17,17 +17,11 @@ const Card = ({ post }) => {
         </div>
         <div className={styles.textContainer}>
           <div className={styles.detail}>
-            <span className={styles.date}>6.12.23 -</span>
-            <span className={styles.category}>CULTURE</span>
+            <span className={styles.date}>{post.skillname}</span>
+            <span className={styles.category}>- {post.levelskill}</span>
           </div>
           <h2>{post.name}</h2>
-          <p className={styles.desc}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Necessitatibus, provident? Ut nisi tenetur magni nostrum eos.
-            Quibusdam neque consequatur, eveniet, voluptas quasi hic molestiae
-            saepe, reprehenderit obcaecati cumque sunt voluptatibus accusamus
-            provident.
-          </p>
+          <p className={styles.desc}>{post.support}</p>
           <Link href={`post/${post._id}`} className={styles.link}>
             Read More
           </Link>

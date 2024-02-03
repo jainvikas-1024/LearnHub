@@ -26,7 +26,7 @@ const CardList = () => {
     fetchPosts();
     setLoading(true);
   }, []);
-  // console.log(posts);
+  console.log(posts);
 
   return (
     <div className={styles.container}>

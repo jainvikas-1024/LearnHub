@@ -7,7 +7,7 @@ export async function GET(request) {
   const uri = process.env.MONGO;
   const client = new MongoClient(uri);
   try {
-    const database = client.db("learnHub");
+    const database = client.db("learnhub");
     const post = database.collection("post");
     const products = await post
       .aggregate([
@@ -16,19 +16,6 @@ export async function GET(request) {
             $or: [{ skillname: { $regex: query, $options: "i" } }],
           },
         },
-        // {
-        //   $search: {
-        //     text: {
-        //       query: query,
-        //       path: ["skillname", "levelskill", "duration"],
-        //     },
-        //   },
-        // },
-        // {
-        //   $sort: {
-        //     price: 1,
-        //   },
-        // },
       ])
       .toArray();
     return NextResponse.json({ success: true, products });

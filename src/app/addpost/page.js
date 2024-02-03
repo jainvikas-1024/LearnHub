@@ -2,6 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import styles from "./addpost.module.css";
+import BackgroundImage from "../components/BackgroundImage";
 const page = () => {
   const [postForm, setPostForm] = useState({});
   const [alert, setAlert] = useState("");
@@ -49,6 +50,7 @@ const page = () => {
   };
   return (
     <>
+    <BackgroundImage>
       <div className={styles.alert}>{alert}</div>
       <div className={styles.postContainer}>
         {/* <form className={styles.input}>
@@ -80,7 +82,7 @@ const page = () => {
           </button>
         </form> */}
         <div className={styles.mybody}>
-          <form>
+          <form className={styles.myform}>
             <div className={styles.container}>
               <center>
                 {" "}
@@ -270,6 +272,7 @@ const page = () => {
           </form>
         </div>
       </div>
+      </BackgroundImage>
     </>
   );
 };

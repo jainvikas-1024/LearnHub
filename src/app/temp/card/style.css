@@ -1,0 +1,228 @@
+*{
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 560px;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 2px 3px 10px rgb(230, 230, 230), -2px -3px 10px rgb(230,230,230);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.logo{
+   /* background-image: url(/img/profile.png);*/
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.profile{
+    display: flex;    
+}
+
+.user-details{
+    position: relative;
+}
+
+.user-details p{
+    margin-left: 30px;
+    margin-top: 0.5px;
+}
+
+.detail-icon{
+    flex-direction: column;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.detail-icon span{
+    background-color: rgb(41, 41, 41);
+    width: 3px ;
+    height: 3px;
+    margin: 2px 0;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.img{
+    background-image: url(/img/image.png);
+    background-size: cover;
+    width: 400px;
+    position: absolute;
+    top: 85px;
+    height: 400px;
+}
+
+.footer-icons{
+    display: flex;
+    position: absolute;
+    top: 499px;
+}
+
+.footer-icons i{
+    font-size:27px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.footer-icons i.fa-heart{
+    color: red;
+
+}
+
+.footer-icons i.fa-comment{
+    opacity: 0.8;
+}
+
+.footer-icons i.fa-paper-plane{
+    opacity: 0.8;
+}
+
+.footer-icons i.fa-bookmark{
+    opacity: 0.8;
+}
+
+.right{
+    position: absolute;
+    left: 370px;
+}
+
+.views{
+    position: absolute;
+    bottom: 50px;
+}
+
+.footer2{
+    position: absolute;
+    bottom: 30px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    top: 499px;
+}
+
+.show-more-container {
+    display: flex;
+    align-items: center;
+}
+
+.show-more-btn {
+ 
+    border: 2px solid #3498db ;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+
+.profile p:first-child {
+    color: dodgerblue;
+}
+
+
+.detail-icon i {
+    color: gray;
+    transition: transform 0.3s ease-in-out;
+}
+
+.detail-icon i:hover {
+    transform: scale(1.2); 
+}
+
+
+.show-more-btn {
+    background-color: dodgerblue; 
+    color: white; 
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.show-more-btn:hover {
+    background-color: white; 
+    color: dodgerblue; 
+}
+
+
+.show-more-btn {
+    border: 2px solid transparent; 
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.show-more-btn:hover {
+    background-color: white;
+    color: dodgerblue;
+    border-color: dodgerblue;
+}
+
+
+
+
+/* I am adjusting card here*/
+
+
+.card {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 300px; 
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 2px 3px 10px rgb(230, 230, 230), -2px -3px 10px rgb(230,230,230);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footer-icons {
+    display: flex;
+    position: absolute;
+    top: 250px;
+}
+
+.right {
+    position: absolute;
+    left: 385px; 
+    top: 250px;
+}
+
+.views {
+    position: absolute;
+    bottom: 35px; 
+}
+
+.footer2 {
+    position: absolute;
+    bottom: 15px;
+}
+
+

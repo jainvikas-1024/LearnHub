@@ -1,0 +1,149 @@
+.navbarr{
+    position: fixed;
+    z-index: 99;
+    width: 100%;  
+}
+/* .mynav{
+    display: flex;
+    justify-content: space-between;
+} */
+.container, .profilewrap{
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+/* .heading{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} */
+/* .logo{
+    margin-right: 12px;
+} */
+.form{ 
+    /* display: flex;
+    flex-direction: column; */
+    width: 75%;
+    margin-left: 12.5%;
+}
+/* .username{
+    float:left;
+} */
+.username{
+    margin-bottom: 10px;
+}
+.password{
+    margin-bottom: 20px;
+}
+.profile img{
+    border-radius: 50%;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    z-index: 16;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 4px;
+    /* background-image: linear-gradient(white,gray); */
+    /* filter: blur(4px);
+    -webkit-filter: blur(4px); */
+    padding: 4px;
+    margin: 4px;
+    margin-right: 15%;
+    margin-left: 20%;
+    width:100%;
+}
+footer .footer{
+    border-radius: 20px;
+    border: 2px solid black;
+}
+/* #file-upload-button{
+    background-image: linear-gradient(blue,pink);
+} */
+.posts{ 
+    width:75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-body img{
+    border-radius: 50%;
+}
+.cardtitle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background-color: gray;
+    border-radius: 20px 20px 0 0;
+}
+.mycard{
+    border-radius: 20px;
+    margin:30px;
+    z-index: 12;
+    /* width: 1000px; */
+}
+.mycard1{
+    margin-top:90px;
+}
+/* .pagewrap{
+    display: flex;
+    flex-direction: row;
+} */
+.tags{
+    width: 25%;
+    position: fixed;
+    right:1%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+.image{
+    border: 2px solid black;
+    box-shadow: 1px 1px rgb(210, 200, 200);
+}
+@media screen and (min-width:1024px){
+    .mycard{
+        width:500px !important;
+    }
+}
+/* .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+} */
+.name img{
+    margin: 20px;
+}
+.info{
+    margin-left: 25%;
+}
+.info img{
+    border-radius: 50%;
+}
+.last{
+    margin-bottom: 70px;
+}
+.card-img-top{
+    border-radius: 0 0 20px 20px;
+}

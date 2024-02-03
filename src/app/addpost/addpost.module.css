@@ -1,5 +1,6 @@
 .postContainer{
   margin-top: 40px;
+  /* background-image: "aibook.webp" !important; */
 } 
 .input {
     display: flex;
@@ -37,8 +38,12 @@
 
   .container {  
     padding: 50px;  
-  background-color: rgb(64, 174, 210);
+  background-color: rgb(36, 37, 80);
   border-radius: 40px 40px 40px 40px;
+  width:50%;
+  margin-left: 50px;
+  border: 2px solid white;
+  /* background-image: "aibook.webp"; */
 }  
   
 .input, .textarea {  
@@ -57,13 +62,14 @@
 
  .mybody {  
             padding: 10px 0;  
+            /* background-image: "aibook.webp" !important; */
          }  
 .hr {  
   border: 1px solid #f1f1f1;  
   margin-bottom: 25px;  
 }  
 .registerbtn {  
-  background-color: #20c225;  
+  background-color: #207bea;  
   color: white;  
   padding: 16px 20px;  
   margin: 0 30% 0 30%;  
@@ -73,6 +79,6 @@
   width: 40%;
 }  
 .registerbtn:hover {  
-    background-color: #0b9b10;  
-}  
+    background-color: #3020c2;  
+} 
   

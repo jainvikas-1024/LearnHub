@@ -8,13 +8,23 @@ const Card = ({ post }) => {
     <>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
-          <Image
-            src={post.img}
-            alt="post image"
-            height={300}
-            width={320}
-            className={styles.image}
-          />
+          {post.img ? (
+            <Image
+              src={post.img}
+              alt="post image"
+              height={300}
+              width={320}
+              className={styles.image}
+            />
+          ) : (
+            <Image
+              src="/dl.jpeg"
+              alt="post image"
+              height={300}
+              width={320}
+              className={styles.image}
+            />
+          )}
         </div>
         <div className={styles.textContainer}>
           <div className={styles.detail}>

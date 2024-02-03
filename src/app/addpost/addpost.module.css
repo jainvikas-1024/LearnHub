@@ -1,0 +1,29 @@
+/* Add your own styles as needed */
+
+
+  
+.input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .labelName {
+    margin-bottom: 5px;
+  }
+  
+  .inputName {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+  }
+  

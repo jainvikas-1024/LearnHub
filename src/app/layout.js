@@ -17,12 +17,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={asul.className}>
-        {/* <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        > */}
         <div className="container">
           <header>
             <Navbar />

@@ -17,7 +17,6 @@ const CardList = () => {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         let rjson = await response.json();
-        console.log(rjson);
         setLoading(false);
         setPosts(rjson.products);
       } catch (error) {

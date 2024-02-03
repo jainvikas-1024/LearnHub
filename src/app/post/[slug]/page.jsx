@@ -2,7 +2,26 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./singlePage.module.css";
-const page = () => {
+
+const fetchPost = async (id) => {
+  try {
+    const response = await fetch("/api/singlePost", {
+      method: "GET",
+      cache: "no-store",
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    let rjson = await response.json();
+    setPosts(rjson.products);
+  } catch (error) {
+    console.error("Error fetching data:", error.message);
+  }
+};
+
+const page = async (params) => {
+  console.log(params);
+  const getData = await fetchPost(params);
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>

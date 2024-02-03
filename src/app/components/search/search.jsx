@@ -18,7 +18,7 @@ const Search = () => {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
       const res = await response.json();
-      // console.log(res);
+      console.log(res);
       if (res && res.products) {
         setLoading(false);
         setDropdown(res.products);

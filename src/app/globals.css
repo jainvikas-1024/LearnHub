@@ -1,33 +1,64 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+:root{
+  --bg:#121212;
+  --textColor:#ddd;
+  --softBg:#1c1c1c;
+  --softTextColor:#a6a6a6;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  max-width:100vw;
+  overflow-x: hidden;
+}
+header{
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: var(--softBg);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.container{
+  min-height: 100vh;
+  color: var(--textColor);
+  background-color: var(--bg);
+}
+
+.wrapper{
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  /* Your styles for tablets go here */
+  .wrapper{
+      max-width: 92%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  /* Your styles for tablets go here */
+  .wrapper{
+      max-width: 80%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media only screen and (max-width: 767px) {
+  .wrapper{
+      max-width: 100%;
+      padding-left: 40px;
+      padding-right: 40px;
   }
 }

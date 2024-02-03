@@ -1,7 +1,6 @@
-/* Add your own styles as needed */
-
-
-  
+.postContainer{
+  margin-top: 40px;
+} 
 .input {
     display: flex;
     flex-direction: column;
@@ -26,4 +25,54 @@
     cursor: pointer;
     width: fit-content;
   }
+
+  .alert{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    color: var(--textColor);
+    background-color: rgb(68, 182, 68);
+  }
+
+
+  .container {  
+    padding: 50px;  
+  background-color: rgb(64, 174, 210);
+  border-radius: 40px 40px 40px 40px;
+}  
+  
+.input, .textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;
+  border-radius: 20px 20px 20px 20px;
+}  
+.input:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+
+ .mybody {  
+            padding: 10px 0;  
+         }  
+.hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #20c225;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 0 30% 0 30%;  
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  cursor: pointer;  
+  width: 40%;
+}  
+.registerbtn:hover {  
+    background-color: #0b9b10;  
+}  
   

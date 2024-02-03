@@ -1,11 +1,16 @@
 import Image from "next/image";
-// import CardList from "./components/cardList/CardList";
+import CardList from "./components/cardList/CardList";
 import styles from "./homepage.module.css";
-import Link from "next/link";
+import Search from "./components/search/search";
+import Filter from "./components/filter/Filter";
 export default function Home() {
   return (
     <main className={styles.container}>
-      <div className={styles.content}>{/* <CardList /> */}</div>
+      <Search />
+      <div className={styles.content}>
+        <Filter />
+        <CardList />
+      </div>
     </main>
   );
 }

@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:100px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo{
+    flex:1;
+    font-size: 2.8rem;
+    font-weight:400;
+}
+
+.links{
+    flex:1;
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+    align-items: center;
+    gap: 40px !important;
+}
+.links :hover{
+    color:var(--softTextColor);
+    font-style: bold;
+    cursor: pointer;
+}
+
+.btn{
+    padding: 10px 15px;
+    background-color: var(--softBg);
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    width: fit-content;
+  }
+ /* Your styles for tablets go here */
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+    .logo{
+        font-size: 1.6rem;
+    }
+    .links{
+        font-size: 15px;
+        gap:15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .link{
+        display:none;
+    }
+    .btn{
+        display: none;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+}

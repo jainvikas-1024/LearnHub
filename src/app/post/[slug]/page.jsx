@@ -1,42 +1,56 @@
+// "use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./singlePage.module.css";
-
-const fetchPost = async (id) => {
-  try {
-    const response = await fetch("/api/singlePost", {
-      method: "GET",
-      cache: "no-store",
-    });
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    let rjson = await response.json();
-    setPosts(rjson.products);
-  } catch (error) {
-    console.error("Error fetching data:", error.message);
-  }
-};
+// const fetchPost = async (id) => {
+//   try {
+//     const response = await fetch(`/api/singlePost?id=${id}`, {
+//       method: "GET",
+//       cache: "no-store",
+//     });
+//     if (!response.ok) {
+//       throw new Error(`HTTP error! Status: ${response.status}`);
+//     }
+//     const data = await response.json();
+//     console.log(data);
+//     return data;
+//   } catch (error) {
+//     console.error("Error fetching data:", error.message);
+//   }
+// };
 
 const page = async (params) => {
-  console.log(params);
-  const getData = await fetchPost(params);
+  // console.log(params);
+  // const getData = await fetchPost(params);
+
+  // const [post, setPost] = useState(null);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const data = await fetchPost(params);
+  //     // setPost(data.post);
+  //   };
+
+  //   fetchData();
+  // }, [params]);
+
+  // if (!post) {
+  // Loading state or error handling
+  //   return <div>Loading...</div>;
+  // }
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
         <div className={styles.textContainer}>
-          <h1 className={styles.title}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            perspiciatis vitae ipsa!
-          </h1>
+          <h1 className={styles.title}>Lorem adipisci!</h1>
           <div className={styles.user}>
             <div className={styles.userImageContainer}>
               <Image src="/th.jpg" alt="" fill className={styles.avatar} />
             </div>
             <div className={styles.userTextContainer}>
-              <span className={styles.username}>John Doe</span>
-              <span className={styles.date}>9/12/2023</span>
+              <span className={styles.username}>Parikshit Gehlaut</span>
+              <span className={styles.date}>04/02/2024</span>
             </div>
           </div>
         </div>

@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./card.module.css";
 const Card = ({ post }) => {
-  console.log(post);
   return (
     <>
       <div className={styles.container}>

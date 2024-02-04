@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Your Project Name
 
-## Getting Started
+LearnHub
 
-First, run the development server:
+Empower Your Learning Journey : From Chaos to Clarity with SkillSprint and a roadmap to Success.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A learning platform that connects users with creators offering roadmap and content related to specific skills and domains.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Skill assessment
+- Personalized learning pathways
+- Advanced content filtering
+- User and creator profiles
+- Community engagement features
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- HTML
+- CSS
+- Next.js
+- MongoDB
+- Next.js API Routing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Next.js was selected for its dynamic features, user-friendly development, and built-in SEO support, making it an ideal choice for creating interactive and search engine optimized websites.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Setup
 
-## Deploy on Vercel
+Follow the given instructions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository: git clone https://github.com/yourusername/yourproject.git
+2. Install dependencies: npm install
+3. Set up MongoDB database and obtain connection string.
+4. Create a .env file and add the MongoDB connection string as MONGO=your_connection_string_here
+5. Run the project: npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Usage
+
+1. Visit the homepage.
+2. search for a skill using the search bar.
+3. Explore the results and select a creator to start learning.
+4. Add your own learning journey to make this open source project useful to all.
+
+## Contributers and contacts
+
+contributers contacts
+Parikshit Gehlaut parikshitgehlaut222@gmail.com
+Atharva Kulkarni atharvask007@gmail.com
+Bhavya Bansal bbansal267@gmail.com
+Vikas Jain vjvikasjain7248@gmail.com
+Arpan sahoo 220020008@iitdh.ac.in

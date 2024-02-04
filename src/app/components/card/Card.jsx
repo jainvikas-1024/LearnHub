@@ -17,7 +17,7 @@ const Card = ({ post }) => {
             />
           ) : (
             <Image
-              src="/dl.jpeg"
+              src="/dl.jpg"
               alt="post image"
               height={300}
               width={320}

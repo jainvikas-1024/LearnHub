@@ -50,4 +50,4 @@ Parikshit Gehlaut parikshitgehlaut222@gmail.com
 Atharva Kulkarni atharvask007@gmail.com
 Bhavya Bansal bbansal267@gmail.com
 Vikas Jain vjvikasjain7248@gmail.com
-Arpan sahoo 220020008@iitdh.ac.in
+Arpan sahu 220020008@iitdh.ac.in

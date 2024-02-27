@@ -1,4 +1,4 @@
-# LearbHub
+# LearnHub
 
 LearnHub
 
